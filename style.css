@@ -46,3 +46,26 @@ body {
 .hidden {
   display: none;
 }
+.movie img {
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.movie img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffffff55;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5em;
+  color: #fff;
+}
