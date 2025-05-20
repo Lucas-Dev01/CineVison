@@ -50,3 +50,8 @@ body {
   transform: scale(1.05);
   transition: transform 0.3s;
 }
+.poster:hover {
+  transform: scale(1.05);         /* Aumenta o tamanho em 5% */
+  transition: transform 0.3s;     /* Faz isso de forma suave em 0.3 segundos */
+}
+
