@@ -4,8 +4,8 @@ const movies = {
     desc: "Sinopse de Berserk: ação,Dark Fantasy terror."
   },
   movie2: {
-    title: "O Filme 2",
-    desc: "Sinopse do filme 2: drama profundo e envolvente."
+    title: "The end Evangelion",
+    desc: "Sinopse de Eva: drama profundo e envolvente."
   }
   // Adicione mais filmes aqui
 };
