@@ -46,12 +46,13 @@ body {
 .hidden {
   display: none;
 }
-.poster:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s;
+.poster {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 .poster:hover {
-  transform: scale(1.05);         /* Aumenta o tamanho em 5% */
-  transition: transform 0.3s;     /* Faz isso de forma suave em 0.3 segundos */
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(255, 0, 0, 0.5);
 }
 
