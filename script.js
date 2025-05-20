@@ -1,7 +1,7 @@
 const movies = {
   movie1: {
-    title: "O Filme 1",
-    desc: "Sinopse do filme 1: ação, aventura e muita emoção."
+    title: "Berserk",
+    desc: "Sinopse de Berserk: ação,Dark Fantasy terror."
   },
   movie2: {
     title: "O Filme 2",
