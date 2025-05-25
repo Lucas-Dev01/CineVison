@@ -1,15 +1,16 @@
 const movies = {
   movie1: {
     title: "Berserk",
-    desc: "Sinopse: ação,Dark Fantasy terror."
+    desc: "Sinopse: Ação, dark fantasy e terror."
   },
   movie2: {
-    title: "The end Evangelion",
-    desc: "Sinopse: drama profundo e envolvente."
+    title: "The End of Evangelion",
+    desc: "Sinopse: Drama profundo e envolvente."
   },
   movie3: {
-    title: "Vidas ao vento",
-    desc: "Sinopse: drama profundo e envolvente.
+    title: "Vidas ao Vento",
+    desc: "Sinopse: Drama histórico comovente e inspirador."
+  }
 };
 
 function showInfo(id) {
@@ -21,14 +22,15 @@ function showInfo(id) {
 function closeInfo() {
   document.getElementById("info-box").classList.add("hidden");
 }
+
 const menuToggle = document.getElementById('menu-toggle');
 const sideMenu = document.getElementById('side-menu');
 const closeMenu = document.getElementById('close-menu');
 
 menuToggle.addEventListener('click', () => {
-    sideMenu.style.left = '0';
+  sideMenu.style.left = '0';
 });
 
 closeMenu.addEventListener('click', () => {
-    sideMenu.style.left = '-250px';
+  sideMenu.style.left = '-250px';
 });
