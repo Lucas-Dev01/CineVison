@@ -1,13 +1,15 @@
 const movies = {
   movie1: {
     title: "Berserk",
-    desc: "Sinopse de Berserk: ação,Dark Fantasy terror."
+    desc: "Sinopse: ação,Dark Fantasy terror."
   },
   movie2: {
     title: "The end Evangelion",
-    desc: "Sinopse de Eva: drama profundo e envolvente."
-  }
-  // Adicione mais filmes aqui
+    desc: "Sinopse: drama profundo e envolvente."
+  },
+  movie3: {
+    title: "Vidas ao vento",
+    desc: "Sinopse: drama profundo e envolvente.
 };
 
 function showInfo(id) {
