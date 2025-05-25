@@ -22,7 +22,19 @@ function showInfo(id) {
 function closeInfo() {
   document.getElementById("info-box").classList.add("hidden");
 }
+function searchMovies() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const movies = document.querySelectorAll(".movie");
 
+  movies.forEach(movie => {
+    const altText = movie.querySelector("img").alt.toLowerCase();
+    if (altText.includes(input)) {
+      movie.style.display = "block";
+    } else {
+      movie.style.display = "none";
+    }
+  });
+}
 const menuToggle = document.getElementById('menu-toggle');
 const sideMenu = document.getElementById('side-menu');
 const closeMenu = document.getElementById('close-menu');
