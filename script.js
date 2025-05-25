@@ -21,3 +21,14 @@ function showInfo(id) {
 function closeInfo() {
   document.getElementById("info-box").classList.add("hidden");
 }
+const menuToggle = document.getElementById('menu-toggle');
+const sideMenu = document.getElementById('side-menu');
+const closeMenu = document.getElementById('close-menu');
+
+menuToggle.addEventListener('click', () => {
+    sideMenu.style.left = '0';
+});
+
+closeMenu.addEventListener('click', () => {
+    sideMenu.style.left = '-250px';
+});
