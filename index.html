@@ -8,22 +8,25 @@
 </head>
 <body>
 
-  <div id="menu-toggle">☰</div>
-  <nav id="side-menu">
-    <button id="close-menu">Fechar</button>
+  <div id="menu-toggle" aria-label="Abrir menu">☰</div>
+
+  <nav id="side-menu" aria-label="Menu lateral">
+    <button id="close-menu" aria-label="Fechar menu">Fechar</button>
     <ul>
-      <li><a href="#">Início</a></li>
-      <li><a href="#">Filmes</a></li>
-      <li><a href="#">Contato</a></li>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#filmes">Filmes</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
 
-  <h1>Filmes em Destaque</h1>
+  <h1 id="inicio">Filmes em Destaque</h1>
   
-  <input type="text" id="searchInput" placeholder="Pesquisar filmes..." />
-<button onclick="searchMovies()">Buscar</button>
+  <div>
+    <input type="text" id="searchInput" placeholder="Pesquisar filmes..." aria-label="Pesquisar filmes">
+    <button onclick="searchMovies()">Buscar</button>
+  </div>
 
-  <div class="gallery">
+  <div class="gallery" id="filmes">
     <div class="movie" onclick="showInfo('movie1')">
       <img src="imagens/Berserk.jpeg" alt="Poster de Berserk" />
     </div>
@@ -36,10 +39,14 @@
   </div>
 
   <div id="info-box" class="hidden">
-    <button class="close-btn" onclick="closeInfo()">❌</button>
+    <button class="close-btn" onclick="closeInfo()" aria-label="Fechar informações">❌</button>
     <h2 id="movie-title"></h2>
     <p id="movie-desc"></p>
   </div>
+
+  <footer id="contato">
+    <p>Entre em contato: contato@cinevision.com</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
