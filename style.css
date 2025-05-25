@@ -1,3 +1,9 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
 body {
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
@@ -7,12 +13,14 @@ body {
   padding: 0;
 }
 
+/* Menu hamburguer */
 #menu-toggle {
   font-size: 30px;
   cursor: pointer;
   padding: 10px;
 }
 
+/* Menu lateral */
 #side-menu {
   position: fixed;
   left: -250px;
@@ -20,21 +28,31 @@ body {
   width: 250px;
   height: 100%;
   background: #222;
-  transition: left 0.3s;
+  transition: left 0.3s ease;
   padding: 20px;
+  z-index: 1000;
 }
+
 #side-menu ul {
   list-style: none;
   padding: 0;
 }
+
 #side-menu ul li {
   margin: 15px 0;
 }
+
 #side-menu ul li a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
+#side-menu ul li a:hover {
+  color: #ff3c2b;
+}
+
+/* Galeria de filmes */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -47,18 +65,19 @@ body {
 .movie img {
   width: 220px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .movie img:hover {
   transform: scale(1.08);
-  box-shadow: 0 6px 20px rgba(255,0,0,0.6);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.6);
 }
 
+/* Caixa de informações */
 #info-box {
-  background: rgba(20,20,20,0.95);
+  background: rgba(20, 20, 20, 0.95);
   border: 2px solid #ff3c2b;
   padding: 30px;
   margin: 30px auto;
@@ -72,6 +91,7 @@ body {
   display: none;
 }
 
+/* Botão de fechar */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -88,6 +108,7 @@ body {
   transform: scale(1.2);
 }
 
+/* Animação */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -99,15 +120,23 @@ body {
   }
 }
 
+/* Responsividade */
 @media (max-width: 600px) {
   .movie img {
     width: 150px;
   }
+
   #info-box {
     width: 90%;
     padding: 20px;
   }
+
+  #side-menu {
+    width: 200px;
+  }
 }
+
+/* Campo de busca */
 #searchInput {
   padding: 10px;
   width: 200px;
@@ -116,6 +145,7 @@ body {
   margin: 10px;
 }
 
+/* Botões */
 button {
   padding: 10px 15px;
   border: none;
