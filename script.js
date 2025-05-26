@@ -10,6 +10,18 @@ const movies = {
   movie3: {
     title: "Vidas ao Vento",
     desc: "Sinopse: Drama histórico comovente e inspirador."
+  },
+  movie4: {
+    title: "A Viagem de Chihiro",
+    desc: "Sinopse: Uma garota entra em um mundo mágico para salvar seus pais."
+  },
+  movie5: {
+    title: "Ponyo",
+    desc: "Sinopse: A amizade entre um garoto e um peixinho mágico que quer ser humana."
+  },
+  movie6: {
+    title: "O Castelo no Céu",
+    desc: "Sinopse: Uma aventura em busca de uma cidade flutuante lendária."
   }
 };
 
@@ -24,13 +36,12 @@ function closeInfo() {
 }
 
 function searchMovies() {
-  const input = document.getElementById("searchInput").value.toLowerCase().trim();
-  const movies = document.querySelectorAll(".movie");
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const movieElements = document.querySelectorAll(".movie");
 
-  movies.forEach(movie => {
+  movieElements.forEach(movie => {
     const altText = movie.querySelector("img").alt.toLowerCase();
-
-    if (altText.includes(input) || input === "") {
+    if (altText.includes(input)) {
       movie.style.display = "block";
     } else {
       movie.style.display = "none";
