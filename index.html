@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WW CineVision</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -19,73 +19,75 @@
     </ul>
   </nav>
 
-  <h1 id="inicio">Filmes em Destaque</h1>
-  
-  <div>
-    <input type="text" id="searchInput" placeholder="Pesquisar filmes..." aria-label="Pesquisar filmes">
-    <button onclick="searchMovies()">Buscar</button>
-  </div>
+  <header>
+    <h1 id="inicio">Filmes em Destaque</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Pesquisar filmes..." aria-label="Pesquisar filmes" />
+      <button onclick="searchMovies()">Buscar</button>
+    </div>
+  </header>
 
-  <div class="gallery" id="filmes">
-    <div class="gallery" id="filmes">
-    <div class="movie" onclick="showInfo('movie1')">
-      <img src="imagens/Berserk.jpeg" alt="Poster de Berserk" />
-    </div>
-    <div class="movie" onclick="showInfo('movie2')">
-      <img src="imagens/Eva Poster.jfif" alt="Poster de The End of Evangelion" />
-    </div>
-    <div class="movie" onclick="showInfo('movie3')">
-      <img src="imagens/Vid.jpeg" alt="Poster de Vidas ao Vento" />
-    </div>
-    <div class="movie" onclick="showInfo('movie4')">
-      <img src="imagens/Chihiro.jpg" alt="A Viagem de Chihiro" />
-    </div>
-    <div class="movie" onclick="showInfo('movie5')">
-      <img src="imagens/Ponyo.jfif" alt="Ponyo" />
-    </div>
-    <div class="movie" onclick="showInfo('movie6')">
-      <img src="imagens/Castelo.jpg" alt="O Castelo no Céu" />
-    </div>
-    <div class="movie" onclick="showInfo('movie7')">
-      <img src="imagens/akir.jpg" alt="Akira" />
-    </div>
-    <div class="movie" onclick="showInfo('movie8')">
-      <img src="imagens/castelo2.jpg" alt="O Castelo Animado" />
-    </div>
-    <div class="movie" onclick="showInfo('movie9')">
-      <img src="imagens/blu.jpeg" alt="Perfect Blue" />
-    </div>
-    <div class="movie" onclick="showInfo('movie10')">
-      <img src="imagens/coracao.jpg" alt="Sussurros do Coração" />
-    </div>
-    <div class="movie" onclick="showInfo('movie11')">
-      <img src="imagens/kiki.jpg" alt="O Serviço de Entregas da Kiki" />
-    </div>
-    <div class="movie" onclick="showInfo('movie12')">
-      <img src="imagens/marnie.jpg" alt="As Memórias de Marnie" />
-    </div>
-    <div class="movie" onclick="showInfo('movie13')">
-      <img src="imagens/princesa.png" alt="Princesa Mononoke" />
-    </div>
-    <div class="movie" onclick="showInfo('movie14')">
-      <img src="imagens/Totoro.jpg" alt="Meu Amigo Totoro" />
-    </div>
-    <div class="movie" onclick="showInfo('movie15')">
-      <img src="imagens/Túmulo.jpg" alt="Túmulo dos Vagalumes" />
-    </div>
-    <div class="movie" onclick="showInfo('movie16')">
-      <img src="imagens/your name2.jpeg" alt="Your Name" />
-    </div>
-  </div>
+  <main>
+    <section class="gallery" id="filmes">
+      <div class="movie" onclick="showInfo('movie1')">
+        <img src="imagens/Berserk.jpeg" alt="Poster de Berserk" />
+      </div>
+      <div class="movie" onclick="showInfo('movie2')">
+        <img src="imagens/Eva Poster.jfif" alt="Poster de The End of Evangelion" />
+      </div>
+      <div class="movie" onclick="showInfo('movie3')">
+        <img src="imagens/Vid.jpeg" alt="Poster de Vidas ao Vento" />
+      </div>
+      <div class="movie" onclick="showInfo('movie4')">
+        <img src="imagens/Chihiro.jpg" alt="A Viagem de Chihiro" />
+      </div>
+      <div class="movie" onclick="showInfo('movie5')">
+        <img src="imagens/Ponyo.jfif" alt="Ponyo" />
+      </div>
+      <div class="movie" onclick="showInfo('movie6')">
+        <img src="imagens/Castelo.jpg" alt="O Castelo no Céu" />
+      </div>
+      <div class="movie" onclick="showInfo('movie7')">
+        <img src="imagens/akir.jpg" alt="Akira" />
+      </div>
+      <div class="movie" onclick="showInfo('movie8')">
+        <img src="imagens/castelo2.jpg" alt="O Castelo Animado" />
+      </div>
+      <div class="movie" onclick="showInfo('movie9')">
+        <img src="imagens/blu.jpeg" alt="Perfect Blue" />
+      </div>
+      <div class="movie" onclick="showInfo('movie10')">
+        <img src="imagens/coracao.jpg" alt="Sussurros do Coração" />
+      </div>
+      <div class="movie" onclick="showInfo('movie11')">
+        <img src="imagens/kiki.jpg" alt="O Serviço de Entregas da Kiki" />
+      </div>
+      <div class="movie" onclick="showInfo('movie12')">
+        <img src="imagens/marnie.jpg" alt="As Memórias de Marnie" />
+      </div>
+      <div class="movie" onclick="showInfo('movie13')">
+        <img src="imagens/princesa.png" alt="Princesa Mononoke" />
+      </div>
+      <div class="movie" onclick="showInfo('movie14')">
+        <img src="imagens/Totoro.jpg" alt="Meu Amigo Totoro" />
+      </div>
+      <div class="movie" onclick="showInfo('movie15')">
+        <img src="imagens/Túmulo.jpg" alt="Túmulo dos Vagalumes" />
+      </div>
+      <div class="movie" onclick="showInfo('movie16')">
+        <img src="imagens/your name2.jpeg" alt="Your Name" />
+      </div>
+    </section>
+  </main>
 
-  <div id="info-box" class="hidden">
+  <div id="info-box" class="hidden" role="dialog" aria-modal="true" aria-labelledby="movie-title" aria-describedby="movie-desc">
     <button class="close-btn" onclick="closeInfo()" aria-label="Fechar informações">❌</button>
     <h2 id="movie-title"></h2>
     <p id="movie-desc"></p>
   </div>
 
   <footer id="contato">
-    <p>Caso não ache seu filme entre em contato: cinevisionspace@gmail.com</p>
+    <p>Caso não ache seu filme entre em contato: <a href="mailto:cinevisionspace@gmail.com">cinevisionspace@gmail.com</a></p>
   </footer>
 
   <script src="script.js"></script>
