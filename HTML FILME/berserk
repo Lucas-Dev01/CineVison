@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berserk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">← Voltar para a Galeria</a>
+</nav>
+
+<h1>Berserk</h1>
+<img src="imagens/Berserk.jpeg" alt="Poster de Berserk" style="max-width:300px; border-radius:10px;">
+
+<p>Uma história sombria e intensa que acompanha Guts, um guerreiro marcado pelo destino, enfrentando forças sobrenaturais e sua própria fúria.</p>
+
+</body>
+</html>
