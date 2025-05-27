@@ -22,8 +22,44 @@ const movies = {
   movie6: {
     title: "O Castelo no Céu",
     desc: "Sinopse: Uma aventura em busca de uma cidade flutuante lendária."
-  }
-};
+  },
+
+  movie7: {
+    title: "Akira",
+    desc: "Sinopse: Um clássico cyberpunk sobre poderes psíquicos e destruição."
+  },
+  movie8: {
+    title: "O Castelo Animado",
+    desc: "Sinopse: Uma jovem amaldiçoada encontra abrigo com um mago excêntrico."
+  },
+  movie9: {
+    title: "Perfect Blue",
+    desc: "Sinopse: Um thriller psicológico sobre fama e identidade."
+  },
+  movie10: {
+    title: "Sussurros do Coração",
+    desc: "Sinopse: Uma história delicada sobre descobertas e sonhos."
+  },
+  movie11: {
+    title: "O Serviço de Entregas da Kiki",
+    desc: "Sinopse: Uma jovem bruxa inicia sua vida independente em uma nova cidade."
+  },
+  movie12: {
+    title: "As Memórias de Marnie",
+    desc: "Sinopse: Mistério e amizade em uma emocionante jornada emocional."
+  },
+  movie13: {
+    title: "Princesa Mononoke",
+    desc: "Sinopse: Um príncipe se envolve no conflito entre humanos e a natureza."
+  },
+  movie14: {
+    title: "Meu Amigo Totoro",
+    desc: "Sinopse: Duas irmãs exploram o campo e encontram criaturas mágicas."
+  },
+  movie15: {
+    title: "Túmulo dos Vagalumes",
+    desc: "Sinopse: Um drama comovente sobre sobrevivência e guerra."
+  },
 
 function showInfo(id) {
   document.getElementById("movie-title").innerText = movies[id].title;
