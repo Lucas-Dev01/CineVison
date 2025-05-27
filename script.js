@@ -59,6 +59,7 @@ const movies = {
   movie15: {
     title: "Túmulo dos Vagalumes",
     desc: "Sinopse: Um drama comovente sobre sobrevivência e guerra."
+  }
   };
 
 function showInfo(id) {
